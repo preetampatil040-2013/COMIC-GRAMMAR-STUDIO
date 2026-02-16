@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Grammar Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: radial-gradient(#ccc 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .comic-border {
+            border: 4px solid black;
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+        }
+        .comic-text {
+            font-family: 'Bangers', cursive;
+            letter-spacing: 0.05em;
+        }
+        .marker-text {
+            font-family: 'Permanent Marker', cursive;
+        }
+        .handwritten {
+            font-family: 'Gochi Hand', cursive;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+        .halftone {
+            background-image: radial-gradient(circle, #000 10%, transparent 10%);
+            background-size: 6px 6px;
+            opacity: 0.05;
+        }
+        @keyframes pop-in {
+            0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+            70% { transform: scale(1.2) rotate(10deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        .action-fx {
+            animation: pop-in 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

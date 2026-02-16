@@ -1,0 +1,7 @@
+{
+  "name": "Comic Grammar Studio",
+  "description": "An interactive, comic-book styled learning hub for mastering grammar across all subjects, featuring a stylized clock and AI-powered grammar lessons.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
